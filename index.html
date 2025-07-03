@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      body{
+         overflow-x: hidden;
+          margin: 0;
+  padding: 0;
+      }
+        .profile-img{
+        width:200px ; 
+        height:200px ;
+          border-radius: 200px;
+        }
+        .profile-name{
+             font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+        }
+        .profile-span{
+            color: #2c98f0;
+        }
+        .profile-para{
+            font-size: 10px;
+          color: rgba(0, 0, 0, 0.7);
+        }
+        .profile-link{
+            position: relative;
+  display: inline-block;
+  margin-bottom: 10px; /* space below */
+  padding-bottom: 5px; /* space for the underline */
+  text-decoration: none;
+  color:rgba(73, 72, 72, 0.7) ;
+        }
+        .profile-link:hover{
+color: black;
+        }
+        .profile-link::after{
+             content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0); /* start from center */
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: #2c98f0; /* underline color */
+  transition: transform 0.3s ease;
+        }
+         .profile-link:hover::after {
+  transform: translateX(-50%) scaleX(1); /* animate to full width */
+}
+.profile-container{
+    max-height: 700px;
+}
+.slide-1{
+background-image: url(images/man-1.webp);
+background-size: cover;
+max-width: 747px;
+height: 600px;
+}
+.slide-2{
+  background-image: url(images/man-2.webp);
+  background-size: cover;
+  max-width: 747px;
+height: 600px;
+}
+.btn-1{
+  background-image: url(images/download.svg.svg);
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-size: 10px;
+ max-width: ;
+}
+.slide-heading{
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* .img-1{
+  max-width: 747px;
+}
+.img-2{
+  max-width: 747px;
+}*/
+.about-span{
+  font-size: 10px;
+letter-spacing:3px;
+color: #999999;
+}
+.about-heading{
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.about-para{
+  color: rgba(0, 0, 0, 0.7);
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.card-icon-heading{
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.icon-card-1{
+  border-bottom: 2px solid #2c98f0;
+  box-shadow: -3px 3px 10px #55585a ;
+}
+.icon-card-2{
+  border-bottom: 2px solid #ec5453;
+  box-shadow: -3px 3px 10px #55585a ;
+}
+.icon-card-3{
+  border-bottom: 2px solid #f9bf3f;
+  box-shadow: -3px 3px 10px #55585a ;
+}
+.icon-card-4{
+  border-bottom: 2px solid #a84cb8;
+  box-shadow: -3px 3px 10px #55585a ;
+}
+.yell-heading{
+   font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.btn-2{
+  border: 1px solid black;
+}
+.logo-heading{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.logo-para{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:rgba(0, 0, 0, 0.7);
+}
+.shape{
+width: 100px;
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+background-color: #2c98f0;
+display: flex;
+margin: 0 auto -30px;
+}
+.shape-2{
+  width: 100px;
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+background-color:#a84cb8 ;
+display: flex;
+margin: 0 auto -30px;
+}
+.shape-3{
+   width: 100px;
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+background-color:#f9bf3f ;
+margin: 0 auto -30px;
+}
+.shape-4{
+   width: 100px;
+clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+background-color:#2fa499 ;
+margin: 0 auto -30px;
+}
+.shadow{
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+ border-bottom: 2px solid #2c98f0 ;
+}
+.shadow-2{
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+ border-bottom: 2px solid #a84cb8 ;
+}
+.shadow-3{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+ border-bottom: 2px solid #f9bf3f ;
+}
+.shadow-4{
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+ border-bottom: 2px solid #2fa499  ;
+}
+section{
+  background-image: url(images/world-pic.webp);
+  background-color: rgba(0, 0, 0, 0.479);
+  background-blend-mode: multiply;
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 800px;
+}
+.num-content{
+font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:rgba(0, 0, 0, 0.7);
+}
+.num-para{
+  letter-spacing: 5px;
+}
+
+.progress{
+height: 6px;
+width:400px ;
+}
+.progress-heading{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:rgba(0, 0, 0, 0.7);
+}
+.accordion-button{
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:rgba(0, 0, 0, 0.7);
+}
+.accordion-button::after {
+  content: "+"; /* Default: plus */
+  font-size: 1.29rem;
+  font-weight: bold;
+  color: #000;
+  background-image: none !important;
+  transform: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "–"; /* When open: minus */
+}
+.accordion-para{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:rgba(0, 0, 0, 0.7);
+}
+.points, .point{
+  color:rgba(0, 0, 0, 0.7);
+}
+.timeline-icon{
+  width: 50px;
+  border: 4px solid  #dee2e6;
+}
+.vertical-line{
+background-color:#dee2e6 ;
+width: 10px;
+height: 150px;
+}
+.timeline-heading{
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.time-span{
+color: #999999;
+font-size: 14px;
+}
+.work-link1{
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-decoration: none;
+}
+.work-link{
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+.img-1{
+ object-fit: cover;
+ height: 200px;
+ 
+}
+.overlay:hover{
+background-color: #2c98f0;
+}
+.shoe-img{
+ object-fit: cover;
+ height: 200px;
+}
+.img-1-span{
+  font-size: 12px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:#cfe2ff;
+}
+
+.overlay{
+  width:316px ;
+  height: 200px;
+ transition: background-color .3s ease;
+}
+ .overlay-text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.img-1-heading{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:white;
+}
+.overlay:hover .overlay-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-4{
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color:#cfe2ff ;
+  transition:0.5s ease;
+}
+.btn-4:hover{
+ opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .custom-width {
+    width: 25% !important;
+  }
+}
+.span-title{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size:10px;
+  color:rgba(0, 0, 0, 0.4);
+}
+.card-heading{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.card-text{
+   color:rgba(0, 0, 0, 0.7);
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.card-img-top{
+  
+  transition: transform 0.5s ease;
+}
+.card-img-top:hover{
+transform: scale(1.2);
+}
+.shapy{
+  background-color: rgba(230, 224, 224, 0.7);
+  max-width: 100px;
+}
+input{
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  background-color:rgba(230, 224, 224, 0.7) ;
+}
+input:focus{
+  background-color:rgba(219, 194, 194, 0.7) ;
+  outline:none;
+}
+textarea{
+  background-color:rgba(230, 224, 224, 0.7) ;
+  outline:none;
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+textarea:focus{
+  background-color:rgba(219, 194, 194, 0.7) ;
+}
+.btn-5{
+  background-color: #2c98f0;
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+ transition:opacity .5s ease;
+}
+.btn-5:hover{
+  opacity: 0.9;
+}
+.globe-link{
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.address{
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+    </style> 
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+        <div class="col w-50 d-sm-block d-none">
+            <div class="profile-container w-25 text-center bg-secondary-subtle overflow-y-scroll position-fixed">
+            <img src="images/fix-image.webp" alt="" class="img-fluid profile-img">
+            <h3 class="profile-name">Jackson Ford</h3>
+            <p class="profile-para text-uppercase">
+            <span class="profile-span">UI/UX/DESIGNER</span>
+             in Philippines
+            </p>
+            <h6 class="profile-links"><a href="" class="profile-link" style="color: #2c98f0;">HOME</a></h6>
+             <h6 class="profile-links"><a href="" class="profile-link">ABOUT</a></h6>
+              <h6 class="profile-links"><a href="" class="profile-link">SERVICES</a></h6>
+               <h6 class="profile-links"><a href="" class="profile-link">SKILLS</a></h6>
+                <h6 class="profile-links"><a href="" class="profile-link">EDUCATION</a></h6>
+                  <h6 class="profile-links"><a href="" class="profile-link">EXPERIENCE</a></h6>
+                    <h6 class="profile-links"><a href="" class="profile-link">WORK</a></h6>
+                      <h6 class="profile-links"><a href="" class="profile-link">BLOG</a></h6>
+                       <h6 class="profile-links"><a href="" class="profile-link">CONTACT</a></h6>
+                       <p class="scroll-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum et suscipit nihil. Consequatur rerum quia reprehenderit soluta totam magni praesentium quas a assumenda, expedita ipsam ullam numquam vel consectetur ipsum.</p>
+            </div>
+        </div>
+        <div class="col-12 offset-md-4">
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active slide-1 position-relative">
+      <!-- <img src="images/man-1.webp" class="d-block img-1" alt="..."> -->
+    <div class="slide-content position-absolute top-50 ms-5">
+      <h1 class="slide-heading">Hi! <br>
+I'm Jackson</h1>
+<p class="slide-para">100% html5 bootstrap templates Made by <br> ariba</p>
+<button class="btn-1 bg-transparent pe-4 ">DOWNLOAD CV</button>
+    </div>
+    </div>
+    <div class="carousel-item background slide-2">
+      <!-- <img src="images/man-2.webp" class="d-block img-2" alt="..."> -->
+        <div class="slide-content position-absolute top-50 ms-5">
+      <h1 class="slide-heading">I am <br>
+a Designer</h1>
+<p class="slide-para">100% html5 bootstrap templates Made by <br> ariba</p>
+<button class="btn-1 bg-transparent pe-4 ">View Portfolio</button>
+    </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+   </div>
+<div class="container offset-md-4 mt-5">
+  <span class="about-span">ABOUT US</span>
+  <h2 class="about-heading mt-3">Who Am I?</h2>
+  <p class="about-para mt-5"><span class="para-span text-dark fw-bold">Hi I'm Jackson Ford</span> On her way she met a copy. The copy warned the Little Blind Text, that where it <br> 
+    came from it would have been rewritten a thousand times and everything that was left from its origin <br> would be the word "and"
+     and the Little Blind Text should turn around and return to its own, safe country.</p>
+
+      <p class="about-para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
+         One day <br> however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+  </div>
+<div class="container offset-md-4 mt-5">
+  <div class="row d-flex gap-3">
+    <div class="col-12 col-md-2">
+<div class="icon-card-1 p-3" data-aos="fade-down">
+<img src="images/light-bulb-svgrepo-com.svg" alt="" class="img-fluid w-25">
+<div class="icon-card-body mt-5">
+  <h6 class="card-icon-heading">Graphic Design</h6>
+</div>
+</div>
+    </div>
+
+    <div class="col-12 col-md-2">
+<div class="icon-card-2 p-3" data-aos="fade-down">
+<img src="images/globe-alt-svgrepo-com.svg" alt="" class="img-fluid w-25">
+<div class="icon-card-body mt-5">
+  <h6 class="card-icon-heading">Web Design</h6>
+</div>
+</div>
+    </div>
+
+    <div class="col-12 col-md-2">
+<div class="icon-card-3 p-3" data-aos="fade-down">
+<img src="images/database-svgrepo-com.svg" alt="" class="img-fluid w-25">
+<div class="icon-card-body mt-5">
+  <h6 class="card-icon-heading">Software</h6>
+</div>
+</div>
+    </div>
+
+    <div class="col-12 col-md-2">
+<div class="icon-card-4 p-3" data-aos="fade-down">
+<img src="images/mobile-portrait-svgrepo-com.svg" alt="" class="img-fluid w-25">
+<div class="icon-card-body mt-5">
+  <h6 class="card-icon-heading">Application</h6>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="container bg-warning offset-md-4 mt-5 w-75 p-4" data-aos="fade-right">
+  <h2 class="yell-heading">I am happy to know you <br>
+that 300+ projects done sucessfully!</h2>
+<button class="btn-2 mt-4 bg-transparent">HIRE ME</button>
+</div>
+
+<div class="container offset-md-4 mt-5">
+   <span class="about-span">What I do?</span>
+  <h2 class="about-heading mt-3">Here are some of my <br> expertise</h2>
+</div>
+<div class="container offset-md-4 mt-5 position-relative">
+<div class="row d-flex align-items-center gap-2 mx-auto">
+  <div class="col-12 col-md-4 shadow p-3" data-aos="fade-left">
+  
+    <div class="shape">
+     <img src="images/light-bulb-white.svg" alt="" class="img-fluid">
+    </div>
+    <div class="logo-card pt-5">
+      <h6 class="logo-heading text-center fw-bold">Innovative Ideas</h6>
+      <div class="logo-para text-center">Separated they live in <br> Bookmarksgrove right at <br> the coast of the Semantics</div>
+    </div>
+  </div>
+   <div class="col-12 col-md-4 shadow-2 p-3" data-aos="fade-up-right">
+     <div class="shape-2 p-3">
+ <img src="images/layer-white.svg" alt="" class="img-fluid">
+    </div>
+    <div class="logo-card pt-5">
+      <h6 class="logo-heading text-center">Graphic Design</h6>
+      <div class="logo-para text-center">Separated they live in <br> Bookmarksgrove right at <br> the coast of the Semantics</div>
+    </div>
+   </div>
+    <div class="col-12 col-md-4 shadow-3 p-3" data-aos="fade-left">
+       <div class="shape-3 p-3">
+     <img src="images/mobile-portrait-white.svg" alt="" class="img-fluid">
+    </div>
+    <div class="logo-card pt-5">
+      <h6 class="logo-heading text-center">Application</h6>
+      <div class="logo-para text-center">Separated they live in <br> Bookmarksgrove right at <br> the coast of the Semantics</div>
+    </div>
+    </div>
+    <div class="col-12 col-md-4 shadow-4 p-3" data-aos="fade-up-right">
+       <div class="shape-4 p-3">
+     <img src="images/database-white-2.svg" alt="" class="img-fluid">
+    </div>
+    <div class="logo-card pt-5">
+      <h6 class="logo-heading text-center">Software</h6>
+      <div class="logo-para text-center">Separated they live in <br> Bookmarksgrove right at <br> the coast of the Semantics</div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<section class="offset-md-4 mt-5">
+<div class="container mt-5 h-100">
+  <div class="row mt-5 g-4">
+    <div class="col-6 col-md-3">
+      <div class="num-content">
+      <h3 class="num text-white fw-bold">309</h3>
+      <p class="num-para text-white">CUPS OF <br> COFFEE</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="num-content">
+      <h3 class="num text-white fw-bold">356</h3>
+      <p class="num-para text-white">PROJECTS</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="num-content">
+      <h3 class="num text-white fw-bold">309</h3>
+      <p class="num-para text-white">CLIENTS</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="num-content">
+      <h3 class="num text-white fw-bold">309</h3>
+      <p class="num-para text-white">PARTNERS</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="container offset-md-4 mt-5">
+   <span class="about-span">My Specialty</span>
+  <h2 class="about-heading mt-3">My Skills</h2>
+  <div class="about-para mt-5">
+    The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and <br> devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and <br> made herself on the way.
+  </div>
+</div>
+
+<div class="container offset-md-4 p-0 mt-4">
+<div class="row ms-2">
+  <div class="col-12 col-md-6">
+<h5 class="progress-heading">Photoshop</h5>
+<div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-primary" style="width: 75%"></div>
+</div>
+<h5 class="progress-heading">HTML5
+ </h5>
+<div class="progress  mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-primary bg-warning" style="width: 85%"></div>
+</div>
+
+<h5 class="progress-heading">WordPress</h5>
+<div class="progress  mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-primary bg-success" style="width: 70%;"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container offset-md-4 mt-5">
+   <span class="about-span">Education</span>
+  <h2 class="about-heading mt-3">Education</h2>
+
+  <div class="accordion w-75" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      MASTER DEGREE GRAPHIC DESIGN
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+   <p class="accordion-para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+       BACHELOR DEGREE OF COMPUTER SCIENCE
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+      <p class="accordion-para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+<ul class="points">
+  <li class="point">Separated they live in Bookmarksgrove right</li>
+  <li class="point">Separated they live in Bookmarksgrove right</li>
+</ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+      DIPLOMA IN INFORMATION TECHNOLOGY
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+     <p class="accordion-para">Far far away, behind the word <span class="accordion-span fw-bold">mountains</span> , far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+         DIPLOMA IN INFORMATION TECHNOLOGY
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+      <div class="accordion-body">
+      <p class="accordion-para">Far far away, behind the word <span class="accordion-span fw-bold">mountains</span> , far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+    HIGH SCHOOL SECONDARY EDUCATION
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+      <div class="accordion-body">
+     <p class="accordion-para">Far far away, behind the word <span class="accordion-span fw-bold">mountains</span> , far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container mt-5 offset-md-4 mb-5">
+<span class="about-span">Experience</span>
+  <h2 class="about-heading mt-3 text-uppercase">Work Experience</h2>
+  </div>
+
+  <div class="container offset-md-4">
+    <div class="row">
+      <div class="col-auto d-none d-sm-block">
+        <div class="timeline-icon bg-primary rounded-5 p-2 text-center">
+          <i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+        </div>
+        <div class="vertical-line ms-3"></div>
+         <div class="timeline-icon bg-danger bg-warning rounded-5 p-2 text-center position-relative">
+          <i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+        </div>
+        <div class="vertical-line ms-3"></div>
+         <div class="timeline-icon rounded-5 p-2 text-center" style="background-color: #a84cb8;">
+          <i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+        </div>
+        <div class="vertical-line ms-3"></div>
+         <div class="timeline-icon bg-warning rounded-5 p-2 text-center position-relative">
+          <i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+        </div>
+        <div class="vertical-line ms-3"></div>
+         <div class="timeline-icon bg-success rounded-5 p-2 text-center position-relative">
+          <i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+        </div>
+        <div class="vertical-line ms-3"></div>
+
+      </div>
+
+
+
+
+       <div class="col-md-6">
+        <div class="timeline-content bg-secondary-subtle p-3" data-aos="flip-left">
+          <h5 class="timeline-heading">Full Stack Developer <span class="time-span">2017-2018</span></h5>
+          <p class="accordion-para">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+        </div>
+        <br>
+       <div class="timeline-content bg-secondary-subtle p-3" data-aos="flip-right">
+          <h5 class="timeline-heading">Frontend Developer At Google Company <span class="time-span">2017-2018</span></h5>
+          <p class="accordion-para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        </div>
+        <br>
+        <div class="timeline-content bg-secondary-subtle p-3"  data-aos="flip-left">
+          <h5 class="timeline-heading">System Analyst <span class="time-span">2017-2018</span></h5>
+          <p class="accordion-para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        </div>
+        <br>
+        <div class="timeline-content bg-secondary-subtle p-3" data-aos="flip-right">
+          <h5 class="timeline-heading">Creative Designer <span class="time-span">2017-2018</span></h5>
+          <p class="accordion-para">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+        </div>
+        <br>
+        <div class="timeline-content bg-secondary-subtle p-3" data-aos="flip-left">
+          <h5 class="timeline-heading">UI/UX Designer at Envato <span class="time-span">2017-2018</span></h5>
+          <p class="accordion-para">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        </div>
+      </div>
+    </div>
+</div>
+ 
+<div class="container offset-md-4 mt-5">
+  <span class="about-span">MY WORK</span>
+  <h2 class="about-heading mt-3 text-uppercase">RECENT WORK</h2>
+  <div class="work-links d-flex gap-4 mt-5">
+  <a href="" class="work-link1">Graphic Design</a>
+   <a href="" class="work-link">Web Design</a>
+    <a href="" class="work-link">Software</a>
+     <a href="" class="work-link">Apps</a>
+     </div>
+</div>
+<div class="container-fluid offset-md-4 mt-5">
+<div class="row g-3">
+  <div class="col-12 col-md-6 custom-width position-relative">
+<img src="images/pic-1.webp" alt="" class="img-fluid img-1 w-100  d-block">
+<div class="overlay position-absolute top-0 position-relative p-4">
+
+<h6 class="img-1-heading overlay-text">Work 1</h6>
+<span class="img-1-span overlay-text">Website</span>
+<div class="icons position-absolute bottom-0 start-0 p-4 d-flex gap-2">
+<span class="git-span bg-primary-subtle rounded-1 px-1 overlay-text">
+  <i class="fa-solid fa-share-nodes"></i>
+</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-eye"></i>100</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-heart"></i>49</span>
+</div>
+</div>
+  </div>
+  <div class="col-12 col-md-6 custom-width position-relative">
+<img src="images/pic-2.webp" alt="" class="img-fluid img-1 w-100  d-block">
+<div class="overlay position-absolute top-0 position-relative p-4">
+
+<h6 class="img-1-heading overlay-text">Work 2</h6>
+<span class="img-1-span overlay-text">Animation</span>
+<div class="icons position-absolute bottom-0 start-0 p-4 d-flex gap-2">
+<span class="git-span bg-primary-subtle rounded-1 px-1 overlay-text">
+  <i class="fa-solid fa-share-nodes"></i>
+</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-eye"></i>100</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-heart"></i>49</span>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="row g-3 mt-2">
+  <div class="col-12 col-md-6 custom-width position-relative">
+<img src="images/pic-3.webp" alt="" class="img-fluid img-1 w-100  d-block">
+<div class="overlay position-absolute top-0 position-relative p-4">
+
+<h6 class="img-1-heading overlay-text">Work 3</h6>
+<span class="img-1-span overlay-text">Illustration</span>
+<div class="icons position-absolute bottom-0 start-0 p-4 d-flex gap-2">
+<span class="git-span bg-primary-subtle rounded-1 px-1 overlay-text">
+  <i class="fa-solid fa-share-nodes"></i>
+</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-eye"></i>100</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-heart"></i>49</span>
+</div>
+</div>
+  </div>
+  <div class="col-12 col-md-6 custom-width position-relative">
+<img src="images/pic-4.webp" alt="" class="img-fluid img-1 w-100  d-block">
+<div class="overlay position-absolute top-0 position-relative p-4">
+
+<h6 class="img-1-heading overlay-text">Work 4</h6>
+<span class="img-1-span overlay-text">Application</span>
+<div class="icons position-absolute bottom-0 start-0 p-4 d-flex gap-2">
+<span class="git-span bg-primary-subtle rounded-1 px-1 overlay-text">
+  <i class="fa-solid fa-share-nodes"></i>
+</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-eye"></i>100</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-heart"></i>49</span>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="row g-3 mt-2">
+  <div class="col-12 col-md-6 custom-width position-relative">
+<img src="images/pic-5.webp" alt="" class="img-fluid img-1 w-100  d-block">
+<div class="overlay position-absolute top-0 position-relative p-4">
+
+<h6 class="img-1-heading overlay-text">Work 5</h6>
+<span class="img-1-span overlay-text">Graphic.logo</span>
+<div class="icons position-absolute bottom-0 start-0 p-4 d-flex gap-2">
+<span class="git-span bg-primary-subtle rounded-1 px-1 overlay-text">
+  <i class="fa-solid fa-share-nodes"></i>
+</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-eye"></i>100</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-heart"></i>49</span>
+</div>
+</div>
+  </div>
+  <div class="col-12 col-md-6 custom-width position-relative">
+<img src="images/pic-6.webp" alt="" class="img-fluid img-1 w-100  d-block">
+<div class="overlay position-absolute top-0 position-relative p-4">
+
+<h6 class="img-1-heading overlay-text">Work 6</h6>
+<span class="img-1-span overlay-text">Web Design</span>
+<div class="icons position-absolute bottom-0 start-0 p-4 d-flex gap-2">
+<span class="git-span bg-primary-subtle rounded-1 px-1 overlay-text">
+  <i class="fa-solid fa-share-nodes"></i>
+</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-eye"></i>100</span>
+<span class="eye bg-primary-subtle  rounded-1 px-1 overlay-text"><i class="fa-solid fa-heart"></i>49</span>
+</div>
+</div>
+  </div>
+</div>
+</div>
+ 
+<div class="container offset-md-4 mt-5">
+  <button class="btn-4 w-50 p-3 bg-primary ms-5 border-0">Load More <i class="fa-solid fa-spinner"></i></button>
+</div>
+<div class="container offset-md-4 mt-5 d-none d-md-block">
+   <span class="about-span">READ</span>
+  <h2 class="about-heading mt-3">RECENT BLOG</h2>
+</div>
+<div class="container offset-md-4 mt-5 w-50 d-none d-md-block">
+<div class="card-group d-flex gap-3">
+  <div class="card border-0">
+    <div class="card-img overflow-hidden">
+    <img src="images/card-pic-1.webp" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+     <span class="span-title">April 14, 2018 | Web Design | </span>
+     <h6 class="card-heading mt-3">RENOVATING NATIONAL GALLERY</h6>
+      <p class="card-text">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    </div>
+  </div>
+  <div class="card border-0">
+    <div class="card-img overflow-hidden">
+    <img src="images/card-pic-2.webp" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+     <span class="span-title">April 14, 2018 | Web Design | </span>
+        <h6 class="card-heading mt-3">RENOVATING NATIONAL GALLERY</h6>
+     <p class="card-text">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    </div>
+  </div>
+  <div class="card border-0">
+    <div class="card-img overflow-hidden">
+    <img src="images/card-pic-3.webp" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+  <span class="span-title">April 14, 2018 | Web Design | </span>
+     <h6 class="card-heading mt-3">RENOVATING NATIONAL GALLERY</h6>
+     <p class="card-text">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container offset-md-4 mt-5 d-none d-md-block">
+  <button class="btn-4 w-50 p-3 bg-primary ms-5 border-0">Load More <i class="fa-solid fa-spinner"></i></button>
+</div>
+
+<div class="container offset-md-4 mt-5">
+   <span class="about-span">GET IN TOUCH</span>
+  <h2 class="about-heading mt-3">CONTACT</h2>
+</div>
+<div class="container offset-md-4 mb-5">
+  <div class="row">
+    <div class="col-12 col-md-4">
+  <div class="shape-container d-flex align-items-center gap-2">
+<div class="shapy text-center p-4">
+<i class="fa-solid fa-globe fa-lg" style="color: #2c98f0;"></i>
+
+</div>
+<div class="link">
+<a href="" class="globe-link">info@domain.com</a>
+</div>
+</div>
+<br>
+ <div class="shape-container d-flex align-items-center gap-2">
+<div class="shapy text-center p-4">
+<i class="fa-solid fa-map fa-lg" style="color: #2c98f0;"></i>
+
+</div>
+<div class="link">
+<p class="address">198 West 21th Street, Suite <br> 721 New York NY 10016</p>
+</div>
+</div>
+<br>
+<div class="shape-container d-flex align-items-center gap-2">
+<div class="shapy text-center p-4">
+
+<i class="fa-solid fa-phone fa-lg" style="color: #2c98f0;"></i>
+</div>
+<div class="link">
+<a href="" class="globe-link text-decoration-none">+123 456 7890</a>
+</div>
+</div>
+
+</div>
+<div class="col-12 col-md-6">
+  <div class="form d-flex flex-column gap-3 mt-3 mt-md-0">
+  <input type="text" class="p-3 w-50 border-0" placeholder="Name">
+  <input type="text" class="p-3 w-50 border-0" placeholder="Email">
+  <input type="text" class="p-3 w-50 border-0" placeholder="Subject">
+  <textarea name="" id="" placeholder="Message" class="w-50 border-0 p-3" ></textarea>
+  </div>
+  <br>
+   <button class="btn-5 border-0 text-white p-2">SEND MESSAGE</button>
+</div>
+</div>
+
+</div>
+<script>
+  AOS.init();
+</script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
